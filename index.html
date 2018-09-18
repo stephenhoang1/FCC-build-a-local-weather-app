@@ -1,0 +1,255 @@
+/*GLOBAL*/
+
+body {
+  font-family: Inconsolata;
+}
+
+@media screen and (max-width: 600px) {
+
+  body .header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    float: none;
+  }
+
+  body .content {
+    margin-top: 214px;
+  }
+  .product {
+    grid-column: 1 / 4;
+  }
+
+
+  body .benefits {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  body .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+ #video iframe{
+    max-width: 70%;
+    max-height: auto;
+  }
+  body .text-CTA {
+  font-size: 50px;
+  }
+}
+
+.container {
+  background: light-grey;
+  display: grid;
+  grid-template-rows: 5fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+.footer, .content {
+  grid-column: 1 / 4;
+}
+
+/*HEADER*/
+
+.header {
+  background: yellow;
+  min-height: 70px;
+  position: fixed;
+  width: 100%;
+}
+
+.header img {
+  max-height: 70px;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*CONTENT*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background:#8000ff;
+  margin-top: 70px;
+}
+
+.text-CTA {
+  font-size: 75px;
+  width: 100%;
+  background-image: url("http://www.thenorthernecho.co.uk/resources/images/8456431/?type=responsive-gallery-fullscreen");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: yellow;
+    ;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px;
+}
+
+.call-to-action * {
+  margin: 10px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=email] {
+  width: 250px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/*BENEFITS*/
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 100px;
+  color: yellow;
+  border: solid;
+  padding: 20px;
+}
+
+.glyphicon {
+  font-size: 50px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.description {
+  text-align: left;
+}
+
+.video {
+  margin-bottom: 100px;
+}
+/*PRODUCTS*/
+
+.card {
+  background: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.spoon-product {
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  background-color: orange;
+}
+
+.img-container {
+  position: relative;
+  height: 70px;
+  width: inherit;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  max-height: 200px;
+  margin: 10px;
+}
+
+.product-img {
+  max-height: 100%;
+}
+
+.product-description {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+
+/*FOOTER*/
+
+.footer {
+  background: yellow;
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links li {
+  display: inline;
+  float: right;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* VALIDATION */
+
+.copyright {
+  text-align: right;
+  padding: 10px;
+}
+
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
